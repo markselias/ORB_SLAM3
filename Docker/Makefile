@@ -1,6 +1,6 @@
 REALSENSE_DIRECTORY=realsense-container/
 REALSENSE_IM_NAME=lmwafer/realsense-ready
-REALSENSE_IM_TAG=2.0-ubuntu18.04
+REALSENSE_IM_TAG=2.5-ubuntu18.04
 REALSENSE_CONT_NAME=realsense-container
 
 ORB_DIRECTORY=orb-container/
@@ -34,4 +34,4 @@ down-realsense:
 	cd ${REALSENSE_DIRECTORY} && docker-compose down
 
 build-realsense:
-	cd ${REALSENSE_DIRECTORY} && sudo docker build -t ${REALSENSE_IM_NAME}:${REALSENSE_READY_IM_TAG} .
+	cd ${REALSENSE_DIRECTORY} && sudo docker build -t ${REALSENSE_IM_NAME}:${REALSENSE_IM_TAG} .

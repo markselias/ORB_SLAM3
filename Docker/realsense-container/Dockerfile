@@ -1,6 +1,6 @@
 # This is a Docker file to build a Docker image with Intel Realsense 2 SDK and all its dependencies pre-installed
 # For more info about ORB-SLAM 3 dependencies go check https://github.com/IntelRealSense/librealsense
-FROM ubuntu:18.04
+FROM dustynv/ros:noetic-pytorch-l4t-r32.7.1
 
 RUN apt-get update && \
 
