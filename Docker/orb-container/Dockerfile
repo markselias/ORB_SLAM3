@@ -61,7 +61,8 @@ RUN apt-get update && \
     #-? Another RUN command in order to free memory
 RUN echo "Getting ORB-SLAM 3 installation ready ..." && \
     cd /dpds/ && \
-    git clone https://github.com/UZ-SLAMLab/ORB_SLAM3.git ORB_SLAM3 && \
+    git clone https://github.com/markselias/ORB_SLAM3.git ORB_SLAM3 && \
+    cd ORB_SLAM3 && git checkout orbslam_jetson && \
     
     #-! From here, a compilation method is proposed by the repo: "chmod +x build.sh && ./build.sh"
     #-! Such method remove some control over the image build (simultaneous jobs number, directories, OpenCV version etc.) 
